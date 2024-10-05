@@ -2,9 +2,9 @@ def fileContents
 pipeline {
   agent any
   stages {
-    stage('checkout code') {
+    stage('Build') {
       steps {
-        echo 'checkout'
+        echo 'build'
         git branch: 'main', credentialsId: '448df686-fbb8-4108-bd3a-43231ea9ea06', url: 'https://github.com/farheen0204/test-project.git'
       }
     }
