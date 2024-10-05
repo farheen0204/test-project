@@ -7,7 +7,7 @@ pipeline {
         git(url: 'https://github.com/farheen0204/test-project.git', branch: 'main')
       }
     }
-    stage('readfile)
+    stage('readfile')
       steps {
         script {
           fileContents = readFile 'Utilities/input.properties'          
