@@ -11,7 +11,7 @@ pipeline {
     stage('readfile') {
       steps {
         script {
-          fileContents = readFile '/Users/arpitkhare/Selenium-Project/selenium_python_famework/Utilities/input.properties'          
+          fileContents = readFile 'Utilities/input.properties'          
         }
       }  
     }  
